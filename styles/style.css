@@ -1,0 +1,155 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  cursor: none;
+}
+
+:root {
+  --black-800: #242626;
+  --white-900: #f5f5f5;
+  --red-600: #ff5858;
+  --wine: #cc2e5d;
+  --gray-800: #cccccc;
+}
+
+body {
+  background: var(--black-800);
+  font-family: "Montserrat", Arial, sans-serif;
+  font-display: optional;
+  min-height: 100vh;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  overflow: hidden;
+
+}
+
+.container {
+  display: grid;
+  place-items: center;
+}
+
+img {
+  margin-bottom: 2rem;
+  width: 6.3125rem;
+  height: 6.1875rem;
+}
+
+h1 {
+  font-size: 3.125rem;
+  font-weight: 700;
+}
+
+a {
+  text-decoration: none;
+  background: linear-gradient(to right, var(--white-900) 50%,var(--red-600) 50%, var(--wine));
+  background-size: 200%;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  transition: 0.5s ease-out;
+}
+
+a:hover {
+  background-position: -100%;
+}
+
+a.link {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 2.1875rem;
+  font-weight: normal;
+  margin-top: 1rem;
+}
+
+.fa {
+  margin-left: 0.31rem;
+}
+
+.cursor {
+  width: 20px;
+  height: 20px;
+  border: 1px solid var(--white-900);
+  border-radius: 50%;
+  position: absolute;
+  animation: cursorAnimate .5s infinite alternate;
+}
+
+.cursor::after {
+  content: "";
+  width: 20px;
+  height: 20px;
+  position: absolute;
+  border: 8px solid var(--gray-800);
+  border-radius: 50%;
+  opacity: .5;
+  top: -9px;
+  left: -9px;
+  animation: cursorAnimate2 .5s infinite alternate;
+}
+
+.expand {
+  animation: cursorAnimate3 .5s forwards;
+  border: 1px solid var(--red-600);
+}
+
+/* Animations */
+@keyframes cursorAnimate3 {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(3);
+  }
+  100% {
+    transform: scale(1);
+    opacity: 0;
+  }
+}
+
+@keyframes cursorAnimate2 {
+  from {
+    transform: scale(1);
+  }
+  to {
+    transform: scale(.4);
+  }
+}
+
+@keyframes cursorAnimate {
+  from {
+    transform: scale(1);
+  }
+  to {
+    transform: scale(.7);
+  }
+}
+
+@media (max-width: 425px) {
+  img {
+    width: 5.625rem;
+    height: 5.5625rem;
+  }
+
+  h1 {
+    font-size: 2.75rem;
+  }
+
+  a.link {
+    font-size: 1.75rem;
+  }
+}
+
+@media (max-width: 360px) {
+  h1 {
+    font-size: 2rem;
+  }
+
+  a.link {
+    font-size: 1.625rem;
+  }
+}
+
