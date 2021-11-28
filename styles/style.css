@@ -38,6 +38,10 @@ img {
   height: 6.1875rem;
 }
 
+li {
+  list-style-type: none;
+}
+
 h1 {
   font-size: 3.125rem;
   font-weight: 700;
@@ -47,6 +51,7 @@ a {
   text-decoration: none;
   background: linear-gradient(to right, var(--white-900) 50%,var(--red-600) 50%, var(--wine));
   background-size: 200%;
+  background-clip: text;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   transition: 0.5s ease-out;
