@@ -10,7 +10,7 @@ const cursor = document.querySelector(".cursor");
 document.addEventListener("mousemove", (event) => {
   cursor.setAttribute(
     "style",
-    `top: ${event.pageY}px; left: ${event.pageX}px;`
+    `top: ${event.pageY + 2}px; left: ${event.pageX - 2}px; display: block;`
   );
 });
 
