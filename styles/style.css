@@ -75,6 +75,7 @@ a.link {
 }
 
 .cursor {
+  top: -100%;
   width: 20px;
   height: 20px;
   border: 1px solid var(--white-900);
