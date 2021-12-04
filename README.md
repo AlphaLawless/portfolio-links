@@ -21,14 +21,14 @@ This is a simple project I developed just to gather my social media links and th
 
 The Project was made using only:
 
-[HTML](https://developer.mozilla.org/en-US/docs/Web/HTML)
-[CSS](https://developer.mozilla.org/en-US/docs/Web/CSS)
-[JavaScript](https://eloquentjavascript.net/00_intro.html)
-[Vanilla Tilt](https://micku7zu.github.io/vanilla-tilt.js/)
+- [HTML](https://developer.mozilla.org/en-US/docs/Web/HTML)
+- [CSS](https://developer.mozilla.org/en-US/docs/Web/CSS)
+- [JavaScript](https://eloquentjavascript.net/00_intro.html)
+- [Vanilla Tilt](https://micku7zu.github.io/vanilla-tilt.js/)
 
 ### Host 🔗
 
-[Vercel](https://vercel.com)
+- [Vercel](https://vercel.com)
 
 ### Implementations 🔧
 
