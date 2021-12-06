@@ -1,15 +1,16 @@
 // Variables
-const section = document.querySelector(".container");
+const container = document.querySelector(".container");
+const section = document.querySelector("ul");
 
 // Animation hover
-VanillaTilt.init(section, {
+VanillaTilt.init(container, {
   max: 25,
   speed: 400,
 });
 
 // Cursor
 const divCursor = document.querySelector("div");
-const linkable = document.querySelectorAll("a");
+const links = document.querySelectorAll("a");
 const cursor = document.querySelector(".cursor");
 
 document.addEventListener("mousemove", (event) => {
@@ -19,7 +20,7 @@ document.addEventListener("mousemove", (event) => {
   );
 });
 
-for (let link of linkable) {
+for (let link of links) {
   link.addEventListener("mouseover", (event) => {
     divCursor.classList.remove("cursor");
     event.target.style.cursor = "pointer";
