@@ -15,7 +15,7 @@ const cursor = document.querySelector(".cursor");
 document.addEventListener("mousemove", (event) => {
   cursor.setAttribute(
     "style",
-    `top: ${event.pageY}px; left: ${event.pageX}px; display: block;`
+    `top: ${event.pageY}px; left: ${event.pageX}px;`
   );
 });
 
@@ -30,9 +30,11 @@ section.addEventListener("mouseleave", () => {
   divCursor.classList.add("cursor");
 });
 
-document.addEventListener("click", () => {
-  cursor.classList.add("expand");
-  setTimeout(() => {
-    cursor.classList.remove("expand");
-  }, 500);
+document.addEventListener("click", (event) => {
+  if (!section.contains(event.target)) {
+    cursor.classList.add("expand");
+    setTimeout(() => {
+      cursor.classList.remove("expand");
+    }, 500);
+  }
 });
