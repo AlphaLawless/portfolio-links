@@ -33,7 +33,7 @@ The Project was made using only:
 ### Implementations 🔧
 
 - [ ] Fix the link style so they are visible in the iOS system
-- [ ] Remove the cursor animation when the user does not have the cursor on the screen.
+- [x] Remove the cursor animation when the user are passing links.
 ## License 📌
 
 [MIT License](./LICENSE)
