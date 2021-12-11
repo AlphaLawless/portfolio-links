@@ -11,7 +11,7 @@
 </p>
 
 <p align="center">
-  <img src="/assets/cover.png" alt="" />
+  <img src="/assets/cover.jpg" alt="" />
 </p>
 
 ## About project 📝
