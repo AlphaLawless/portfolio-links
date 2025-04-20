@@ -2,7 +2,7 @@
   <br>
   <img src="./assets/logo128x128.svg" alt="Alpha Vylly Logo">
   <br>
-    <a href="https://www.alphavylly.live">Alpha Vylly - Social Medias</a>
+    <a href="https://www.alphalawless.com">Alpha Vylly - Social Medias</a>
   <br>
 </h1>
 
